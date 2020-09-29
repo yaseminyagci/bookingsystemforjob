@@ -1,0 +1,10 @@
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Domain.WebUI\bin\Debug\BookingSystem.Domain.WebUI.dll
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Domain.WebUI\bin\Debug\BookingSystem.Domain.WebUI.pdb
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Domain.WebUI\bin\Debug\BookingSystem.Core.dll
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Domain.WebUI\bin\Debug\BookingSystem.Domain.dll
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Domain.WebUI\bin\Debug\BookingSystem.Core.pdb
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Domain.WebUI\bin\Debug\BookingSystem.Domain.pdb
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Domain.WebUI\obj\Debug\BookingSystem.Domain.WebUI.csprojAssemblyReference.cache
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Domain.WebUI\obj\Debug\BookingSystem.Domain.WebUI.csproj.CopyComplete
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Domain.WebUI\obj\Debug\BookingSystem.Domain.WebUI.dll
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Domain.WebUI\obj\Debug\BookingSystem.Domain.WebUI.pdb

@@ -1,0 +1,5 @@
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Core\bin\Debug\BookingSystem.Core.dll
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Core\bin\Debug\BookingSystem.Core.pdb
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Core\obj\Debug\BookingSystem.Core.csprojAssemblyReference.cache
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Core\obj\Debug\BookingSystem.Core.dll
+C:\Users\Yasemin\Desktop\MVC_Course_Booking-master\BookingSystem.Core\obj\Debug\BookingSystem.Core.pdb

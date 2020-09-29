@@ -1,0 +1,104 @@
+﻿@model BookingSystem.Domain.WebUI.Filters.HotelFilter
+
+@{
+    ViewBag.Title = "HotelDefinitionList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section PageScripts
+{
+    @Html.RenderScriptFile(Url.Content("~/Scripts/pages/Hotel/hoteldefinitionlist.js"))
+}
+
+@section BrundCrumb{
+    @Html.BuildBrandCrumb()
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title"><i class="fa fa-filter"></i> Filters</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="box-body filter" style="">
+                <div class="form-group">
+                    <div class="col-md-4">
+                        @Html.LabelFor(model => model.HotelName, new { @class = "control-label" })
+                        <div class="form-group">
+                            @Html.BTextBoxFor(model => model.HotelName, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        @Html.LabelFor(model => model.HotelTypeId, new { @class = "control-label" })
+                        <div class="form-group">
+
+                            @Html.BDropDownListFor(model => model.HotelTypeId, (IEnumerable<BSelectListItem>)ViewBag.HotelTypesData, new { })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer" style="">
+                <div class="col-md-12">
+                    <div style="float:right; padding-left:2px;">
+                        <button type="button" class="btn btn-block btn-danger btnClear">Clear</button>
+                    </div>
+                    <div style="float:right; padding-right:2px;">
+                        <button type="button" class="btn btn-block btn-primary btnSearch">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+            </div>
+            <div class="box-body">
+                <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                    <div class="col-sm-12">
+                        <table id="tableHotelDefinitionList" class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>HotelName</th>
+                                    <th>Title</th>
+                                    <th>Url</th>
+                                    <th>HotelTypeId</th>
+                                    <th>IsActive</th>
+                                    <th>IsDeleted</th>
+                                    <th>#</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    jQuery(document).ready(function () {
+        var initObject = [];
+        var urls = {
+            HotelAddEditActionUrl: '@Url.Action("HotelDefinitionAddEdit", "Hotel")',
+            DeleteUrlAction: '@Url.Action("DeleteHotel", "Hotel")',
+            GridLoadUrl: '@Url.Action("GetHotels", "Hotel")'
+        };
+        debugger;
+        var jsonStr = '@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.HotelTypesData))';
+        var hotelTypesJSon = JSON.parse(jsonStr);
+
+        initObject.Urls = urls;
+        initObject.HotelTypesJSon = hotelTypesJSon;
+
+        HotelDefinitionlist.init(initObject);
+    });
+</script>
